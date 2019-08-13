@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    border: solid 1px red;
+}
+header {
+    color: white;
+    background-color: rgb(29, 28, 92)
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
