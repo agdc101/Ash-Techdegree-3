@@ -101,9 +101,43 @@ button {
     font-style: italic;
     text-align: right;
 }
-input:focus {
+input:focus,
+select:focus,
+textarea:focus {
     border: solid tomato 2px;
 }
 button:hover {
     color: black;
+}
+/* ------------------------------ */
+@media (min-width: 768px) {
+.container {
+    width: 80%;
+    max-width: 1150px;
+}
+input[type="text"], 
+input[type="number"],
+input[type="email"],
+select {
+    width: 80%;
+    max-width: 600px;
+}
+fieldset:first-of-type {
+    display: flex;
+}
+input[id="zip_code"] {
+    height: 65px;
+    width: 180px;
+}
+
+/* label:nth-of-type(1),
+label:nth-of-type(2),
+label:nth-of-type(3) {
+    color:red;
+} */
+
+
+
+
+
 }
