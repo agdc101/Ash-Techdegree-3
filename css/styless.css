@@ -1,10 +1,8 @@
 * {
-    box-sizing: border-box;   
+    box-sizing: border-box;  
+    font-family: 'Ubuntu', sans-serif; 
 }
 
-body {
-    font-family: 'Ubuntu', sans-serif;
-}
 /* ----- CONTAINER STYLES ------ */
 
 .control {
@@ -49,9 +47,13 @@ legend {
     font-size: 1.4em;
  }
 label {
-    display: block;
     margin-bottom: 2px;
     padding-top: 12px;  
+}
+fieldset:nth-of-type(1),
+fieldset:nth-of-type(2) {
+    display: flex;
+ 
 }
 
 fieldset:nth-of-type(1) {
@@ -119,25 +121,27 @@ input[type="text"],
 input[type="number"],
 input[type="email"],
 select {
-    width: 80%;
+    width: 50%;
     max-width: 600px;
 }
-fieldset:first-of-type {
-    display: flex;
-}
+
 input[id="zip_code"] {
     height: 65px;
     width: 180px;
 }
+.flex-pair {
+    display: flex;
+    flex-direction: row;
+}
 
-/* label:nth-of-type(1),
-label:nth-of-type(2),
-label:nth-of-type(3) {
-    color:red;
-} */
+label {
+    flex-basis: 30%;
+    margin: auto 0;
+}
 
+input {
+    flex-basis: 70%;
 
-
-
+}
 
 }

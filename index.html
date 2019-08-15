@@ -21,37 +21,51 @@
 
       <div class="container control">
         <main>          
-          <form>
+          <form method="POST">
             <fieldset>
               <legend>Contact Information</legend>
-              <label for="full_name">Full Name</label>
-              <input type="text" name="user_name" id="full_name" placeholder="required" required><br>
+              <div class="flexpair">
+                <label for="full_name">Full Name</label>
+                <input type="text" name="user_name" id="full_name" placeholder="required" required>
+              </div>
 
-              <label for="email">Email</label>
-              <input type="email" name="user_email" id="email" placeholder="required" required><br>
+              <div class="flexpair">
+                <label for="email">Email</label>
+                <input type="email" name="user_email" id="email" placeholder="required" required>
+              </div>
 
-              <label for="phone_no">Phone Number</label>
-              <input type="number" name="user_phone" id="phone_no"><br>
+              <div class="flexpair">
+                <label for="phone_no">Phone Number</label>
+                <input type="number" name="user_phone" id="phone_no">
+              </div>
 
-              <label for="street_add">Street Address</label>
-              <input type="text" name="user_street" id="street_add" placeholder="eg...'CodeReview Avenue'"><br>
+              <div class="flexpair">
+                <label for="street_add">Street Address</label>
+                <input type="text" name="user_street" id="street_add" placeholder="eg...'CodeReview Avenue'">
+              </div>
 
-              <label for="city">City</label>
-              <input type="text" name="user_city" id="city" placeholder="eg... 'CodeTown'"><br>
+              <div class="flexpair">
+                <label for="city">City</label>
+                <input type="text" name="user_city" id="city" placeholder="eg... 'CodeTown'">
+              </div>
 
-              <label for="state">State</label>
-              <select id="state" name="user_state">
-                  <option value="" disabled selected>Choose State...</option>
-                  <option value="british_columbia">British Columbia</option>
-                  <option value="alberta">Alberta</option>
-                  <option value="ontario">Ontario</option>
-                  <option value="yukon">Yukon</option>
-                  <option value="manitoba">Manitoba</option>
-                  <option value="nova_scotia">Nova Scotia</option>
-              </select><br>
+              <div class="flexpair">
+                <label for="state">State</label>
+                <select id="state" name="user_state">
+                    <option value="" disabled selected>Choose State...</option>
+                    <option value="british_columbia">British Columbia</option>
+                    <option value="alberta">Alberta</option>
+                    <option value="ontario">Ontario</option>
+                    <option value="yukon">Yukon</option>
+                    <option value="manitoba">Manitoba</option>
+                    <option value="nova_scotia">Nova Scotia</option>
+                </select>
+              </div>
 
-              <label for="zip_code">Zip Code</label>
-              <input type="text" name="user_zip" id="zip_code">
+              <div class="flexpair">
+                <label for="zip_code">Zip Code</label>
+                <input type="text" name="user_zip" id="zip_code">
+              </div>
             </fieldset>
 
             <fieldset>
