@@ -17,10 +17,12 @@
       <div class="intro control">
         <h2>Signup For Our Newsletter</h2>
         <p>Get the latest news on how your code is doing</p>
-      </div>     
+      </div> 
+      
+      <div class="container control">    
        <main>          
           <form method="POST">
-            <fieldset>
+            <fieldset class="info">
               <legend>Contact Information</legend>
               <div class="flexpair">
                 <label for="full_name">Full Name</label>
@@ -68,30 +70,42 @@
 
             <fieldset>
               <legend>Newsletter</legend>
-              <p>Select the Newsletters you would like to recieve!</p>
-              <label for="html">HTML News</label>
-              <input type="checkbox" name="user_letter" id="html" value="letter_html">
+              <span>Select the Newsletters you would like to recieve!</span>
 
-              <label for="css">CSS News</label>
-              <input type="checkbox" name="user_letter" id="css" value="letter_css">
+              <div>
+                <input type="checkbox" name="user_letter" id="html" value="letter_html">
+                <label for="html">HTML News</label>                
+              </div>
 
-              <label for="java">Javascript News</label>
-              <input type="checkbox" name="user_letter" id="java" value="letter_java"><br>
+              <div>
+                <input type="checkbox" name="user_letter" id="css" value="letter_css">
+                <label for="css">CSS News</label>               
+              </div>
 
+              <div>
+                <input type="checkbox" name="user_letter" id="java" value="letter_java">
+                <label for="java">Javascript News</label>               
+              </div><br> 
+             
               <label>Newsletter Format</label>
-              <label for="format_html">HTML</label>
-              <input type="radio" name="user_format" value="user_format_html" id="format_html">
+              <div>
+                <input type="radio" name="user_format" value="user_format_html" id="format_html">
+                <label for="format_html">HTML</label>
+              </div>
 
-              <label for="format_plain">Plain Text</label>
-              <input type="radio" name="user_format" value="user_format_plain" id="format_plain">
+              <div>
+                <input type="radio" name="user_format" value="user_format_plain" id="format_plain">
+                <label for="format_plain">Plain Text</label>                
+              </div><br>
 
-              <label for="other_topics">Other topics you would like to hear about..</label>
+              <label for="other_topics">Other topics you would like to hear about..</label><br><br>
               <textarea id="other_topics" name="user_topics" placeholder="eg...'how do i get into web development?'"></textarea>
               
               <button type="submit">Sign Up</button>
             </fieldset>
           </form>
-        </main>        
+        </main>
+      </div>        
       <footer>
         <span>Copyright &copy; The Code Review</span>
       </footer>
