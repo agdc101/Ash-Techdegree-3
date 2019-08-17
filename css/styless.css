@@ -57,7 +57,7 @@ select {
 select,
 input[type="text"],
 input[type="email"],
-input[type="number"] {
+input[type="tel"] {
     display:block;
 }
 
@@ -78,7 +78,7 @@ select {
 }
 
 input[type="text"], 
-input[type="number"],
+input[type="tel"],
 input[type="email"],
 select {
     width: 100%;
@@ -115,6 +115,7 @@ button {
 input:focus,
 select:focus,
 textarea:focus {
+    transition: border .4s;
     border: solid tomato 2px;
 }
 button:hover {
@@ -127,7 +128,7 @@ button:hover {
     max-width: 950px;
 }
 input[type="text"], 
-input[type="number"],
+input[type="tel"],
 input[type="email"],
 select {
     width: 65%;
