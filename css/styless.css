@@ -7,6 +7,13 @@
 body {
     font-size: 1.1em;
 }
+header {    
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: white;
+    background-color: tomato;
+}
 .control {
     margin: 0 auto;
     width: 95%;
@@ -21,18 +28,11 @@ body {
     border-bottom: solid black 3px;
 }
 
-form {
-    
+form { 
     background-color: rgb(248, 245, 245);
     border-radius: 8px;
 }
-header {    
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    color: white;
-    background-color: tomato;
-}
+
 fieldset {
     border: none;
 }
@@ -72,8 +72,7 @@ fieldset:nth-of-type(2) {
 
 input,
 textarea,
-select {
-    width: 100%;
+select {   
     border-radius: 8px;
     background-color: rgb(226, 228, 229);
 }
@@ -82,14 +81,12 @@ input[type="text"],
 input[type="number"],
 input[type="email"],
 select {
+    width: 100%;
     padding: 10px;
 }
 input[id="zip_code"] {
     height: 30px;
     width: 140px;
-}
-label {
-    display: block;
 }
 span {
     display: block;
@@ -127,12 +124,13 @@ button:hover {
 @media (min-width: 768px) {
 .container {
     width: 80%;
-    max-width: 1150px;
+    max-width: 950px;
 }
 input[type="text"], 
 input[type="number"],
 input[type="email"],
 select {
+    width: 65%;
     max-width: 600px;
 }
 
@@ -143,10 +141,14 @@ input[id="zip_code"] {
 .flex-pair {
     display: flex;
     align-items: center;
-    flex-direction: row;
     justify-content: space-between;
-    
 }
 
+.zippy {
+    justify-content: flex-start;
+}
+#zip_name {
+    flex-basis: 35%;
+}
 
 }
